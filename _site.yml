@@ -7,6 +7,14 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Practica-1"
+      href: P1.html
+    - text: "Practica-2"
+      href: P2.html
+    - text: "Practica-3"
+      href: P3.html
+    - text: "Practica-4"
+      href: P4.html
 output:
   html_document:
     theme: cosmo

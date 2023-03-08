@@ -2,4 +2,4 @@
 title: "About This Website"
 ---
 
-Informacion de Practica 1.
+Informacion basica
