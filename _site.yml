@@ -1,11 +1,11 @@
 name: "my-website"
 output_dir: "."
 navbar:
-  title: "My Website"
+  title: "Introduccion a la Geomatica"
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
+    - text: "Sobre el Curso"
       href: about.html
     - text: "Practica-1"
       href: P1.html

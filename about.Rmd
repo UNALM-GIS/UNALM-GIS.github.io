@@ -1,5 +1,5 @@
 ---
-title: "About This Website"
+title: "Sobre el CURSO Introduccion a Geomática"
 ---
 
 Informacion basica
