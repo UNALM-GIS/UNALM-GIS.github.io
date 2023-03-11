@@ -1,7 +1,5 @@
 ---
-title: "My Website"
+title: "Introducción"
 ---
-
-Hello, Website!
 
 ## Hola a todos los estudiantes, aqui podran adquirir los recursos de la clase

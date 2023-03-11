@@ -1,21 +1,21 @@
-name: "my-website"
+name: "UNALM-IGA"
 output_dir: "."
 navbar:
-  title: "Introduccion a la Geomatica"
+  title: "Introduccion"
   left:
     - text: "Home"
       href: index.html
     - text: "Sobre el Curso"
       href: about.html
-    - text: "Practica-1"
+    - text: "Laboratorio1"
       href: P1.html
-    - text: "Practica-2"
+    - text: "Laboratorio2"
       href: P2.html
-    - text: "Practica-3"
+    - text: "Laboratorio3"
       href: P3.html
-    - text: "Practica-4"
+    - text: "Laboratorio4"
       href: P4.html
 output:
   html_document:
-    theme: cosmo
-    highlight: textmate
+    theme: spacelab
+    highlight: espresso

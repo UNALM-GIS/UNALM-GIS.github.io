@@ -1,5 +1,5 @@
 ---
-title: "Sobre el CURSO Introduccion a Geomática"
+title: "Sobre Introduccion a Geomática"
 ---
 
-Informacion basica
+##Informacion basica
