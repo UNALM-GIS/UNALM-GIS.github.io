@@ -2,6 +2,6 @@
 title: "GOOGLE EARTH ENGINE : ENTORNO Y FUNDAMENTOS - PARTE I"
 output: html_document
 ---
-![Assets](D:\WEB\UMALM-GIS\assets.jpg)
+![](D:\WEB\UMALM-GIS\assets.jpg)
 
-![Inspector](D:\WEB\UMALM-GIS\inspector.jpg)
+![](D:\WEB\UMALM-GIS\inspector.jpg)
