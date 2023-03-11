@@ -1,9 +1,9 @@
 name: "UNALM-IGA"
 output_dir: "."
 navbar:
-  title: "Introduccion"
+  title: "Introduccion a la Geomatica"
   left:
-    - text: "Home"
+    - text: "Incio"
       href: index.html
     - text: "Sobre el Curso"
       href: about.html

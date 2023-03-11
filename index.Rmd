@@ -1,5 +1,5 @@
 ---
-title: "Introducción"
+title: "Introduccion"
 ---
 
-## Hola a todos los estudiantes, aqui podran adquirir los recursos de la clase
+## Estimado estudiantes, aqui podran adquirir los recursos de la clase
