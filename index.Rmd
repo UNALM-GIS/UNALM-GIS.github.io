@@ -1,5 +1,6 @@
 ---
-title: "Introduccion"
+title: "CICLO 2023 - I"
+output: html_document
 ---
 
-## Estimado estudiantes, aqui podran adquirir los recursos de la clase
+### Estimados estudiantes, aqui podran adquirir los materiales, links y referencias de las clases de practica.

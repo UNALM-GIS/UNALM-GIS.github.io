@@ -1,3 +1,4 @@
 ---
 title: "GOOGLE EARTH ENGINE : ENTORNO Y FUNDAMENTOS  - PARTE II"
+output: html_document
 ---

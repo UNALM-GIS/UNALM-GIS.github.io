@@ -1,3 +1,9 @@
 ---
 title: "GOOGLE EARTH ENGINE : ENTORNO Y FUNDAMENTOS - PARTE I"
+output: html_document
 ---
+
+![Entorno 1](G:\My Drive\GIS-IGA\2023WEB\P3\assets.png)
+
+
+![Entorno 2](G:\My Drive\GIS-IGA\2023WEB\P3\inspector.png)

@@ -1,3 +1,4 @@
 ---
 title: "INTRODUCCIÓN AL PROCESAMIENTO DE IMÁGENES"
+output: html_document
 ---
