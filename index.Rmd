@@ -3,4 +3,4 @@ title: "CICLO 2023 - I"
 output: html_document
 ---
 
-### Estimados estudiantes, aqui podran adquirir los materiales, links y referencias de las clases de practica.
+## Estimados estudiantes, aqui podran adquirir los materiales, links y referencias de las clases de practica.
