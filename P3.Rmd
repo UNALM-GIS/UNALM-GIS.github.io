@@ -3,5 +3,4 @@ title: "GOOGLE EARTH ENGINE : ENTORNO Y FUNDAMENTOS - PARTE I"
 output: html_document
 ---
 ![](C:/Users/javierochoa/OneDrive - CGIAR/Documents/R/assets.jpg)
-
 ![](C:/Users/javierochoa/OneDrive - CGIAR/Documents/R/inspector.jpg)

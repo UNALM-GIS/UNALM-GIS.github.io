@@ -2,3 +2,33 @@
 title: "GOOGLE EARTH ENGINE : ENTORNO Y FUNDAMENTOS  - PARTE II"
 output: html_document
 ---
+---
+title: "ASPECTOS BÁSICOS DEL PROCESAMIENTO DIGITAL DE IMÁGENES"
+output: html_document
+---
+
+## Ejercicios
+
+*Ejercicio 1: Convertir de ASCII a TIFF*
+
+*Ejercicio 2: Hello World*
+
+*Ejercicio 3: Transformación incluyendo referencia espacial*
+
+*Ejercicio 4: Transformación incluyendo referencia espacial y puntos de origen*
+
+*Ejercicio 5: Composición RGB*
+
+## Archivos para descargar
+
+[Exo1.txt](https://drive.google.com/file/d/19Ehea0BWh1xZnwcWvDbq1JAaGbbnPwwb/view?usp=share_link)
+
+[Hello_world.txt](https://drive.google.com/file/d/19AavV1Nl7gmlmrw-kykkOAcUWHxzhMMc/view?usp=share_link)
+
+[Exo2.txt](https://drive.google.com/file/d/198As4LWSgFD_dl1FPiiKdGsWQcLCOfRq/view?usp=share_link)
+
+[TE_red.txt](https://drive.google.com/file/d/19FWl1lJonvrWb1ooeKBJJf2WjHshaIfk/view?usp=share_link)
+
+[TE_green.txt](https://drive.google.com/file/d/19GckyMPauKFXLTIEr5j--vMde8Ql-RD8/view?usp=share_link)
+
+[TE_blue.txt](https://drive.google.com/file/d/19QLyvJx370J-sOEq_AYyQxvXHKl1aTLB/view?usp=share_link)
