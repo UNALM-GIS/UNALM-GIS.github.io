@@ -3,8 +3,16 @@ title: "GOOGLE EARTH ENGINE : ENTORNO Y FUNDAMENTOS - PARTE I"
 output:
   html_document: default
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(geonames)
+library(knitr)
+library(dplyr)
+```
+
 ```{r assets, echo=FALSE, warning=FALSE, out.width='100%'}
-knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/P3/assets.jpg", error = FALSE)
+knitr::include_graphics("C:/R/assets.jpg", error = FALSE)
 ```
 ```{r inspector, echo=FALSE, warning=FALSE, out.width='100%'}
 knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/P3/inspector.jpg", error = FALSE)
