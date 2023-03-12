@@ -1,6 +1,11 @@
 ---
 title: "GOOGLE EARTH ENGINE : ENTORNO Y FUNDAMENTOS - PARTE I"
-output: html_document
+output:
+  html_document: default
 ---
-![](C:/Users/javierochoa/OneDrive - CGIAR/Documents/R/assets.jpg)
-![](C:/Users/javierochoa/OneDrive - CGIAR/Documents/R/inspector.jpg)
+```{r assets, echo=FALSE, warning=FALSE, out.width='100%'}
+knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/P3/assets.jpg", error = FALSE)
+```
+```{r inspector, echo=FALSE, warning=FALSE, out.width='100%'}
+knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/P3/inspector.jpg", error = FALSE)
+```
