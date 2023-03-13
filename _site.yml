@@ -1,7 +1,7 @@
 name: "UNALM-IGA"
 output_dir: "."
 navbar:
-  title: "Introducción a la Geomática"
+  title: "UNALM-IGA"
   left:
     - text: "Incio"
       href: index.html

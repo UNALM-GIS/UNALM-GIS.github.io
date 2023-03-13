@@ -1,6 +1,15 @@
 ---
-title: "CICLO 2023 - I"
+title: "INTRODUCCION A LA GEOMATICA CICLO 2023 - I"
 output: html_document
 ---
 
 ## Estimados estudiantes, aqui podran adquirir los materiales, links y referencias de las clases de practica.
+
+
+```{r echo=FALSE, warning=FALSE}
+library(leaflet)
+m <- leaflet() %>%
+  addTiles() %>%  # Añade por defecto los Tiles de  OpenStreetMap
+  addMarkers(lng=-76.948, lat=-12.082)
+m
+```

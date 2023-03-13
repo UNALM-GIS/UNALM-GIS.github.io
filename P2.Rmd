@@ -3,9 +3,6 @@ title: "ASPECTOS BÁSICOS DEL PROCESAMIENTO DIGITAL DE IMÁGENES"
 output: html_document
 ---
 
-
-
-
 ## Ejercicios
 
 *Ejercicio 1: Convertir de ASCII a TIFF*
@@ -23,6 +20,10 @@ output: html_document
 [Exo1.txt](https://drive.google.com/file/d/19Ehea0BWh1xZnwcWvDbq1JAaGbbnPwwb/view?usp=share_link)
 
 [Hello_world.txt](https://drive.google.com/file/d/19AavV1Nl7gmlmrw-kykkOAcUWHxzhMMc/view?usp=share_link)
+
+[Exo2_1.txt](https://drive.google.com/file/d/1M5SsbdrSCVbXdD_emENJrgVSksPY5a9K/view?usp=share_link)
+
+[Exo2_2.txt](https://drive.google.com/file/d/1M5vfiHB307xpQWAiOsKb3zDNW4Lz_IZN/view?usp=share_link)
 
 [Exo2.txt](https://drive.google.com/file/d/198As4LWSgFD_dl1FPiiKdGsWQcLCOfRq/view?usp=share_link)
 

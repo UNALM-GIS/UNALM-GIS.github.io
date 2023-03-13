@@ -11,9 +11,59 @@ library(knitr)
 library(dplyr)
 ```
 
+## GEE 
+
+GEE provee una buena solución, siendo la más avanzada plataforma basada en nube para el procesamiento de big data proveniente de sensores remotos, que no solo posee eficientes capacidades de computación, también contiene muchas fuentes de imagen (como Landsat, MODIS y Sentinel), datos meteorológicos, datos de cobertura de tierra y datos de distribución de la población (Fang et al., 2017).
+
+## GEE Entorno
+
+###  Assets
+
+Aqui podrás encontrar datos que has cargado a GEE (Features class, images , image collections, etc)
+
 ```{r assets, echo=FALSE, warning=FALSE, out.width='100%'}
-knitr::include_graphics("C:/R/assets.jpg", error = FALSE)
+knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/P3/assets.jpg", error = FALSE)
 ```
+
+
+### Inspector 
+Brinda información de la ubicación, valores de pixel, y objetos en el mapa
+
+
 ```{r inspector, echo=FALSE, warning=FALSE, out.width='100%'}
 knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/P3/inspector.jpg", error = FALSE)
 ```
+
+## Videos de referencia
+
+Registro de cuenta en GEE:
+
+<div>
+<p style = 'text-align:center;'>
+<iframe width="600" height = "420"
+src="https://www.youtube.com/watch?v=E60J32Umqeo&t=187s">
+</iframe>
+</div>
+</p>
+
+
+Introducción de GEE:
+
+<div>
+<p style = 'text-align:center;'>
+<iframe width="600" height = "420"
+src="https://www.youtube.com/watch?v=2NaXgRML-gs">
+</iframe>
+</div>
+</p>
+
+Catálogo de Datos en GEE:
+
+<div>
+<p style = 'text-align:center;'>
+<iframe width="600" height = "420"
+src="https://www.youtube.com/watch?v=msHN5KeQjmI">
+</iframe>
+</div>
+</p>
+
