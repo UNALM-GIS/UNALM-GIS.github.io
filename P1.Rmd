@@ -2,9 +2,13 @@
 title: "INTRODUCCIÓN AL PROCESAMIENTO DE IMÁGENES"
 output: html_document
 ---
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(geonames)
+library(knitr)
+library(dplyr)
+```
 
 ## Matrices y el Formato ASCII GRID
-```{r assets, echo=FALSE, warning=FALSE, out.width='100%'}
-knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/P1/grid.png", error = FALSE)
-```
+
+![grid](G:/My Drive/GIS-IGA/2023WEB/UNALM-GIS.github.io/P1/grid.png)
