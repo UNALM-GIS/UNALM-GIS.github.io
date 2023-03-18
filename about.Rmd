@@ -6,7 +6,7 @@ output: html_document
 
 ### EJEMPLOS
 
-#### Creación de Mapas Tematicos Interactivos: Uso data de estaciones, servicios de mapas en geoservidores y programcion de objetos (uso de librerias sf, rgal, leaflet, geojsonf  entre otros)
+#### Creación de Mapas Tematicos Interactivos: Uso data de estaciones, servicios de mapas en geoservidores y programcion de objetos (uso de librerias sf, rgdal, leaflet, geojsonf  entre otros)
 
 ```{r echo=TRUE, warning=FALSE}
 library(leaflet)
