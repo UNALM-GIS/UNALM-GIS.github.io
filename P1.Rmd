@@ -9,6 +9,11 @@ library(knitr)
 library(dplyr)
 ```
 
-## Matrices y el Formato ASCII GRID
+#### Matrices y el Formato ASCII GRID
+Un ráster de formato  ASCII,  comenzará con la información del encabezado que define las propiedades del ráster como el tamaño de celda, el número de filas y columnas, y las coordenadas del origen del ráster. La información del encabezado está seguida por la información del valor de celda
 
 ![grid](G:/My Drive/GIS-IGA/2023WEB/UNALM-GIS.github.io/P1/grid.png)
+
+
+#### Video: Uso de ArcGIS : Funcion Raster to ASCII
+<iframe width="956" height="538" src="https://www.youtube.com/embed/ay9-pnP6eKA" title="ASCII generation from Raster | ArcGIS | GeoDev" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -30,6 +30,16 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-binding-2.1.2/leaflet.js"></script>
+<script src="site_libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="site_libs/leaflet-providers-plugin-2.1.2/leaflet-providers-plugin.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -42,6 +52,107 @@
 
 
 
+<style type="text/css">
+  code {
+    white-space: pre;
+  }
+  .sourceCode {
+    overflow: visible;
+  }
+</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    background-color: #2a211c;
+    color: #bdae9d;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #bdae9d;  padding-left: 4px; }
+div.sourceCode
+  { color: #bdae9d; background-color: #2a211c; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ffff00; } /* Alert */
+code span.an { color: #0066ff; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #44aa43; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #43a8ed; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #049b0a; } /* Char */
+code span.cn { } /* Constant */
+code span.co { color: #0066ff; font-weight: bold; font-style: italic; } /* Comment */
+code span.do { color: #0066ff; font-style: italic; } /* Documentation */
+code span.dt { text-decoration: underline; } /* DataType */
+code span.dv { color: #44aa43; } /* DecVal */
+code span.er { color: #ffff00; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #44aa43; } /* Float */
+code span.fu { color: #ff9358; font-weight: bold; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #0066ff; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #43a8ed; font-weight: bold; } /* Keyword */
+code span.op { } /* Operator */
+code span.pp { font-weight: bold; } /* Preprocessor */
+code span.sc { color: #049b0a; } /* SpecialChar */
+code span.ss { color: #049b0a; } /* SpecialString */
+code span.st { color: #049b0a; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #049b0a; } /* VerbatimString */
+code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    var j = 0;
+    while (j < rules.length) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
 
 
 
@@ -267,8 +378,8 @@ $(document).ready(function () {
 
 <div
 id="el-curso-corresponde-al-área-de-estudios-específicos-siendo-de-carácter-teórico-y-práctico.-se-propone-desarrollar-la-comprensión-de-la-geomática-y-la-teledetección-y-promover-la-indagación-e-investigación-para-la-caracterización-de-los-sistemas-de-teledetección-interpretación-y-corrección-de-imágenes-digitales-e-implementación-de-sistemas-de-información-geográfica.-se-abordará-las-siguientes-unidades-principios-de-la-teledetección-sistemas-de-teledetección-procesamiento-de-imágenes-teledetección-radar-e-introducción-al-procesamiento-geoespacial-en-la-nube"
-class="section level2">
-<h2>El curso corresponde al área de estudios específicos, siendo de
+class="section level4">
+<h4>El curso corresponde al área de estudios específicos, siendo de
 carácter teórico y práctico. Se propone desarrollar la comprensión de la
 geomática y la teledetección y promover la indagación e investigación
 para la caracterización de los sistemas de teledetección, interpretación
@@ -276,7 +387,60 @@ y corrección de imágenes digitales e implementación de Sistemas de
 Información Geográfica. Se abordará las siguientes unidades: principios
 de la teledetección, sistemas de teledetección, procesamiento de
 imágenes, teledetección radar e introducción al procesamiento
-geoespacial en la nube</h2>
+geoespacial en la nube</h4>
+</div>
+<div id="ejemplos" class="section level3">
+<h3>EJEMPLOS</h3>
+<div
+id="creación-de-mapas-tematicos-interactivos-uso-data-de-estaciones-servicios-de-mapas-en-geoservidores-y-programcion-de-objetos-uso-de-librerias-sf-rgal-leaflet-geojsonf-entre-otros"
+class="section level4">
+<h4>Creación de Mapas Tematicos Interactivos: Uso data de estaciones,
+servicios de mapas en geoservidores y programcion de objetos (uso de
+librerias sf, rgal, leaflet, geojsonf entre otros)</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> <span class="fu">setView</span>(<span class="sc">-</span><span class="fl">93.65</span>, <span class="fl">42.0285</span>, <span class="at">zoom =</span> <span class="dv">4</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addWMSTiles</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi&quot;</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">layers =</span> <span class="st">&quot;nexrad-n0r-900913&quot;</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">options =</span> <span class="fu">WMSTileOptions</span>(<span class="at">format =</span> <span class="st">&quot;image/png&quot;</span>, <span class="at">transparent =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">attribution =</span> <span class="st">&quot;Weather data © 2012 IEM Nexrad&quot;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-cabe425ff0f254201726" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-cabe425ff0f254201726">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addWMSTiles","args":["http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi",null,null,{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","attribution":"Weather data © 2012 IEM Nexrad","layers":"nexrad-n0r-900913"}]}],"setView":[[42.0285,-93.65],4,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="wms-natgeoworldmap" class="section level4">
+<h4>- WMS NatGeoWorldMap</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>m <span class="sc">%&gt;%</span> <span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>Esri.NatGeoWorldMap) <span class="sc">%&gt;%</span> <span class="fu">setView</span>(<span class="sc">-</span><span class="fl">93.65</span>, <span class="fl">42.0285</span>, <span class="at">zoom =</span> <span class="dv">4</span>) </span></code></pre></div>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-15e98633891f2fce9fa7" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-15e98633891f2fce9fa7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addWMSTiles","args":["http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi",null,null,{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","attribution":"Weather data © 2012 IEM Nexrad","layers":"nexrad-n0r-900913"}]},{"method":"addProviderTiles","args":["Esri.NatGeoWorldMap",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[42.0285,-93.65],4,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+<div
+id="computacion-en-la-nube-google-earth-engine-vs-the-planetary-computer-microsoft"
+class="section level4">
+<h4>Computacion en la nube: Google Earth Engine vs The Planetary
+Computer (Microsoft)</h4>
+<p>Oportunidad al futuro:</p>
+<ol style="list-style-type: decimal">
+<li>Proporcionar una plataforma interactiva para el desarrollo de
+algoritmos geoespaciales a gran escala</li>
+<li>Desarrollo de ciencia de alto impacto basada en datos</li>
+<li>Busqueda de avances sustantivos en los desafíos globales que
+involucran grandes conjuntos de datos geoespaciales</li>
+</ol>
+<div class="figure">
+<img
+src="P2/Sentinel.png"
+alt="" />
+<p class="caption">Mision Sentinel</p>
+</div>
+</div>
+</div>
+<div id="video-satellite-radar-in-agriculture" class="section level3">
+<h3>Video : Satellite Radar in Agriculture</h3>
+<iframe width="1536" height="864" src="https://www.youtube.com/embed/QCuEVs2un3A" title="Satellite Radar in Agriculture Experience with ERS-1 [Report Summary]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
 </div>
 
 

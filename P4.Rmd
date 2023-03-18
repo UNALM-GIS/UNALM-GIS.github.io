@@ -3,14 +3,13 @@ title: "GOOGLE EARTH ENGINE : ENTORNO Y FUNDAMENTOS - PARTE II"
 output:
   html_document: default
 ---
+### CATALOGO DE DATOS 
+[Earth Engine Data Catalog](https://developers.google.com/earth-engine/datasets/catalog)
+Todos los conjuntos de datos disponibles y obtenga un código de ejemplo para visualizar / cargar datos 
+![Datasets](G:/My Drive/GIS-IGA/2023WEB/UNALM-GIS.github.io/P4/Datasets.jpg)
+### GUIA PARA DESARROLLADORES
+[Developers guide](https://developers.google.com/earth-engine/guides) 
+[Google Earth Engine Developers - Google Groups](https://groups.google.com/g/google-earth-engine-developers)   Unete, solo necesitas una cuenta gmail!
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(geonames)
-library(knitr)
-library(dplyr)
-```
-
-## Entorno
-![Inspector](G:/My Drive/GIS-IGA/2023WEB/UNALM-GIS.github.io/P3/inspector.png)
-![Assets](G:/My Drive/GIS-IGA/2023WEB/UNALM-GIS.github.io/P3/assets.png)
+#### Video GEE Tutorial #32 -  Machine Learning with Earth Engine - Supervised Classification
+<iframe width="956" height="538" src="https://www.youtube.com/embed/qWaEfgWi21o" title="GEE Tutorial #32 -  Machine Learning with Earth Engine - Supervised Classification" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

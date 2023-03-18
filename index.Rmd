@@ -6,10 +6,18 @@ output: html_document
 ## Estimados estudiantes, aqui podran adquirir los materiales, links y referencias de las clases de practica.
 
 
-```{r echo=FALSE, warning=FALSE}
+## Desde georeferenciar un objeto en el espacio 
+
+```{r echo=TRUE, warning=FALSE}
 library(leaflet)
 m <- leaflet() %>%
   addTiles() %>%  # Añade por defecto los Tiles de  OpenStreetMap
   addMarkers(lng=-76.948, lat=-12.082)
 m
 ```
+
+## Hasta analizar un conjunto de imagenes satelites
+
+ AFRICA - NDVI (normalized difference vegetation index) Seasonal Vegetation Pattern
+ 
+<iframe width="352" height="626" src="https://www.youtube.com/embed/1lb21WYSlfY" title="NDVI (normalized difference vegetation index) Seasonal Vegetation Pattern" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
