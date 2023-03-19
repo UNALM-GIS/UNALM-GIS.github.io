@@ -4,8 +4,11 @@ output:
   html_document: default
 ---
 ### CATALOGO DE DATOS 
+
 [Earth Engine Data Catalog](https://developers.google.com/earth-engine/datasets/catalog)
+
 Todos los conjuntos de datos disponibles y obtenga un código de ejemplo para visualizar / cargar datos 
+
 ![Datasets](G:/My Drive/GIS-IGA/2023WEB/UNALM-GIS.github.io/P4/Datasets.jpg)
 ### GUIA PARA DESARROLLADORES
 [Developers guide](https://developers.google.com/earth-engine/guides) 

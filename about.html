@@ -389,14 +389,15 @@ de la teledetección, sistemas de teledetección, procesamiento de
 imágenes, teledetección radar e introducción al procesamiento
 geoespacial en la nube</h4>
 </div>
-<div id="ejemplos" class="section level3">
-<h3>EJEMPLOS</h3>
+<div id="ejemplos" class="section level4">
+<h4><em>EJEMPLOS</em></h4>
+</div>
 <div
-id="creación-de-mapas-tematicos-interactivos-uso-data-de-estaciones-servicios-de-mapas-en-geoservidores-y-programcion-de-objetos-uso-de-librerias-sf-rgal-leaflet-geojsonf-entre-otros"
+id="a.-creación-de-mapas-tematicos-interactivos-uso-data-de-estaciones-servicios-de-mapas-en-geoservidores-y-programcion-de-objetos-uso-de-librerias-sf-rgdal-leaflet-geojsonsf-entre-otros"
 class="section level4">
-<h4>Creación de Mapas Tematicos Interactivos: Uso data de estaciones,
+<h4>A. Creación de Mapas Tematicos Interactivos: Uso data de estaciones,
 servicios de mapas en geoservidores y programcion de objetos (uso de
-librerias sf, rgal, leaflet, geojsonf entre otros)</h4>
+librerias sf, rgdal, leaflet, geojsonsf entre otros)</h4>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> <span class="fu">setView</span>(<span class="sc">-</span><span class="fl">93.65</span>, <span class="fl">42.0285</span>, <span class="at">zoom =</span> <span class="dv">4</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addWMSTiles</span>(</span>
@@ -406,20 +407,20 @@ librerias sf, rgal, leaflet, geojsonf entre otros)</h4>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">attribution =</span> <span class="st">&quot;Weather data © 2012 IEM Nexrad&quot;</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-cabe425ff0f254201726" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-cabe425ff0f254201726">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addWMSTiles","args":["http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi",null,null,{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","attribution":"Weather data © 2012 IEM Nexrad","layers":"nexrad-n0r-900913"}]}],"setView":[[42.0285,-93.65],4,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-3f58660a4ca3ddfbccf0" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-3f58660a4ca3ddfbccf0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addWMSTiles","args":["http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi",null,null,{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","attribution":"Weather data © 2012 IEM Nexrad","layers":"nexrad-n0r-900913"}]}],"setView":[[42.0285,-93.65],4,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="wms-natgeoworldmap" class="section level4">
-<h4>- WMS NatGeoWorldMap</h4>
+<h4>WMS NatGeoWorldMap</h4>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>m <span class="sc">%&gt;%</span> <span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>Esri.NatGeoWorldMap) <span class="sc">%&gt;%</span> <span class="fu">setView</span>(<span class="sc">-</span><span class="fl">93.65</span>, <span class="fl">42.0285</span>, <span class="at">zoom =</span> <span class="dv">4</span>) </span></code></pre></div>
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-15e98633891f2fce9fa7" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-15e98633891f2fce9fa7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addWMSTiles","args":["http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi",null,null,{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","attribution":"Weather data © 2012 IEM Nexrad","layers":"nexrad-n0r-900913"}]},{"method":"addProviderTiles","args":["Esri.NatGeoWorldMap",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[42.0285,-93.65],4,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-15077c1ecb61a27ef295" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-15077c1ecb61a27ef295">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addWMSTiles","args":["http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi",null,null,{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","attribution":"Weather data © 2012 IEM Nexrad","layers":"nexrad-n0r-900913"}]},{"method":"addProviderTiles","args":["Esri.NatGeoWorldMap",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"setView":[[42.0285,-93.65],4,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 <div
-id="computacion-en-la-nube-google-earth-engine-vs-the-planetary-computer-microsoft"
+id="b.-computacion-en-la-nube-google-earth-engine-vs-the-planetary-computer-microsoft"
 class="section level4">
-<h4>Computacion en la nube: Google Earth Engine vs The Planetary
+<h4>B. Computacion en la nube: Google Earth Engine vs The Planetary
 Computer (Microsoft)</h4>
 <p>Oportunidad al futuro:</p>
 <ol style="list-style-type: decimal">
@@ -433,12 +434,11 @@ involucran grandes conjuntos de datos geoespaciales</li>
 <img
 src="P2/Sentinel.png"
 alt="" />
-<p class="caption">Mision Sentinel</p>
+<p class="caption">Productos Sentinel 2</p>
 </div>
 </div>
-</div>
-<div id="video-satellite-radar-in-agriculture" class="section level3">
-<h3>Video : Satellite Radar in Agriculture</h3>
+<div id="video-satellite-radar-in-agriculture" class="section level4">
+<h4><em>Video : Satellite Radar in Agriculture</em></h4>
 <iframe width="1536" height="864" src="https://www.youtube.com/embed/QCuEVs2un3A" title="Satellite Radar in Agriculture Experience with ERS-1 [Report Summary]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 </iframe>
 </div>

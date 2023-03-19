@@ -6,26 +6,31 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(geonames)
 library(knitr)
 library(dplyr)
 ```
 
-### Entorno de GEE
-
 GEE provee una buena solución, siendo la más avanzada plataforma basada en nube para el procesamiento de big data proveniente de sensores remotos, que no solo posee eficientes capacidades de computación, también contiene muchas fuentes de imagen (como Landsat, MODIS y Sentinel), datos meteorológicos, datos de cobertura de tierra y datos de distribución de la población (Fang et al., 2017).
+
+### Entorno de GEE
+#### Script TAB
+En la pestaña "Script", los usuarios pueden escribir y guardar sus propios scripts o acceder a una amplia variedad de scripts predefinidos y ejemplos en la biblioteca de scripts. También pueden compartir sus scripts con otros usuarios y colaborar en proyecto.
+
+```{r Script, echo=FALSE, warning=FALSE, out.width='100%'}
+knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/UNALM-GIS.github.io/P3/scripts.png", error = FALSE)
+```
 
 #### Docs TAB
 
-Todas las funciones de los objetos GEE y cómo llamar se pueden encontrar en esta pestaña. Cada Objeto tiene diferentes herramientas disponibles, dependiendo de su tipo.
+En la pestaña "Docs", Encontramos recursos en línea que proporciona documentación detallada sobre la plataforma. Esta información sobre cómo utilizar las herramientas de Earth Engine, cómo acceder a los datos y cómo procesarlos. También se ofrecen guías paso a paso, tutoriales y ejemplos de código. Todas las funciones de los objetos en GEE, estaran determinadas por elementos de entrada, argumentos y elementos de salida.
 
 ```{r docs, echo=FALSE, warning=FALSE, out.width='100%'}
-knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/P3/docs.png", error = FALSE)
+knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/UNALM-GIS.github.io/P3/docs1.png", error = FALSE)
 ```
 
 ####  Assets TAB
 
-Aqui podrás encontrar objetos que has cargado y/o conectado a GEE (Features class, images , image collections, etc)
+En la pestaña "Assests", encontramos objetos que has cargado y/o conectado a GEE (Features class, images , image collections, etc)
 
 ```{r assets, echo=FALSE, warning=FALSE, out.width='100%'}
 knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/P3/assets.jpg", error = FALSE)
@@ -33,8 +38,8 @@ knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/P3/assets.jpg", error = FAL
 
 
 #### Inspector TAB
-Brinda información de la ubicación, valores de pixel, y objetos en el mapa
 
+En la pestaña "Inspector", encontraremos información de la ubicación (latitud y longitud), valores de pixel, y objetos desplegados en el mapa (visualizar propiedades, tipo de objetos, entre otros).
 
 ```{r inspector, echo=FALSE, warning=FALSE, out.width='100%'}
 knitr::include_graphics("G:/My Drive/GIS-IGA/2023WEB/P3/inspector.jpg", error = FALSE)

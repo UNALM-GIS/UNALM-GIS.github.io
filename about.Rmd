@@ -4,9 +4,9 @@ output: html_document
 ---
 #### El curso corresponde al área de estudios específicos, siendo de carácter teórico y práctico. Se propone desarrollar la comprensión de la geomática y la teledetección y promover la indagación e investigación para la caracterización de los sistemas de teledetección, interpretación y corrección de imágenes digitales e implementación de Sistemas de Información Geográfica. Se abordará las siguientes unidades: principios de la teledetección, sistemas de teledetección, procesamiento de imágenes, teledetección radar e introducción al procesamiento geoespacial en la nube
 
-### EJEMPLOS
+#### *EJEMPLOS*
 
-#### Creación de Mapas Tematicos Interactivos: Uso data de estaciones, servicios de mapas en geoservidores y programcion de objetos (uso de librerias sf, rgdal, leaflet, geojsonf  entre otros)
+#### A. Creación de Mapas Tematicos Interactivos: Uso data de estaciones, servicios de mapas en geoservidores y programcion de objetos (uso de librerias sf, rgdal, leaflet, geojsonsf  entre otros)
 
 ```{r echo=TRUE, warning=FALSE}
 library(leaflet)
@@ -20,7 +20,7 @@ m <- leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 4) %>%
 m
 ```
 
-#### - WMS NatGeoWorldMap
+#### WMS NatGeoWorldMap
 
 ```{r echo=TRUE, warning=FALSE}
 library(leaflet)
@@ -29,7 +29,7 @@ m %>% addProviderTiles(providers$Esri.NatGeoWorldMap) %>% setView(-93.65, 42.028
 ```
 
 
-#### Computacion en la nube: Google Earth Engine vs The Planetary Computer (Microsoft)
+#### B. Computacion en la nube: Google Earth Engine vs The Planetary Computer (Microsoft)
 
 Oportunidad al futuro: 
 
@@ -37,8 +37,8 @@ Oportunidad al futuro:
 2. Desarrollo de  ciencia de alto impacto basada en datos
 3. Busqueda de avances sustantivos en los desafíos globales que involucran grandes conjuntos de datos geoespaciales
 
-![Mision Sentinel](G:/My Drive/GIS-IGA/2023WEB/UNALM-GIS.github.io/P2/Sentinel.png)
+![Productos Sentinel 2](G:/My Drive/GIS-IGA/2023WEB/UNALM-GIS.github.io/P2/Sentinel.png)
 
-### Video : Satellite Radar in Agriculture
+#### *Video : Satellite Radar in Agriculture*
 
 <iframe width="1536" height="864" src="https://www.youtube.com/embed/QCuEVs2un3A" title="Satellite Radar in Agriculture Experience with ERS-1 [Report Summary]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
